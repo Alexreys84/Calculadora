@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Parcelas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Parcelas de Veículo</h1>
+        <div class="form-group">
+            <label for="valor">Valor do Veículo:</label>
+            <div class="input-group">
+                <span class="input-group-addon">R$</span>
+                <input type="number" id="valor" placeholder="Digite o valor do veículo">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="entrada">Valor da Entrada:</label>
+            <div class="input-group">
+                <span class="input-group-addon">R$</span>
+                <input type="number" id="entrada" placeholder="Digite o valor da entrada">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="parcela">Valor da Parcela:</label>
+            <div class="input-group">
+                <span class="input-group-addon">R$</span>
+                <input type="number" id="parcela" placeholder="Digite o valor da parcela">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="numParcelas">Número de Parcelas:</label>
+            <input type="number" id="numParcelas" placeholder="Digite o número de parcelas">
+        </div>
+        <div class="button-group">
+            <button onclick="calcularJuros()">Calcular</button>
+            <button onclick="limparCampos()">Limpar</button>
+        </div>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
